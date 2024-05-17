@@ -18,16 +18,17 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="Menu.html"><img src="rugby1.webp" width="220px"></a>
+                <a class="navbar-brand" href="Menu.html"><img src="logo.jfif" width="120px" height="120"></a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="Planes.html">Planes</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="nosotros.html">nosotros</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="Nosotros.html">nosotros</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="Contacto.html">Contacto</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="Menu.html">Menu</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="iniciarsesion.html">Iniciar sesion</a></li>
                     </ul>
                 </div>
             </div>
@@ -36,84 +37,159 @@
     <main>
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Planes</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
+
+                <div class="divider-custom mt-5">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- Portfolio Grid Items-->
+                <h1 class="text-center mb-5">Nuestros planes!</h1>
+
                 <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Launch demo modal
+
+                    <button type="button" class="btn btn-primary mt-4" data-bs-toggle="modal" data-bs-target="#modal1">
+                        <h3>Plan Basico</h3>
                     </button>
                     
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
+                    <!-- Modal 1-->
+                    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg"> <!-- Clase "modal-lg" para hacer la ventana del modal más ancha -->
                             <div class="modal-content">
                                 <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Plan Basico</h1> 
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Plan Básico de Entrenamiento</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <h1></h1>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="entrenando_1.jpg" alt="Imagen del plan básico" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h2>Plan Básico de Entrenamiento</h2>
+                                            <p>
+                                                Nuestro plan básico de entrenamiento está diseñado para aquellos que están dando sus primeros
+                                                pasos en el mundo del fitness o desean mantenerse en forma de manera general. Incluye una rutina
+                                                de ejercicios personalizada, asesoramiento nutricional básico y seguimiento de progreso.
+                                            </p>
+                                            <h3>Venta del Plan</h3>
+                                            <ul>
+                                                <li>Precio: $30.000</li>
+                                                <li>Duración: 4 semanas</li>
+                                                <li>Incluye:
+                                                    <ul>
+                                                        <li>Rutina de ejercicios personalizada</li>
+                                                        <li>Asesoramiento nutricional básico</li>
+                                                        <li>Seguimiento de progreso semanal</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">carrito</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Atrás</button>
+                                    <button type="button" class="btn btn-primary">Comprar</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">>
-                        Launch demo modal
+                    
+                    
+                    <button type="button" class="btn btn-primary mt-4" data-bs-toggle="modal" data-bs-target="#modal2">
+                        <h3>Plan Premiun</h3>
                     </button>
                     
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
+                    <!-- Modal 2-->
+                    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Plan Premium</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Plan Premium de Fisicoculturismo</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                ...
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="entrenando_2.jpg" alt="Imagen del plan premium" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h2>Plan Premium de Fisicoculturismo</h2>
+                                            <p>
+                                                Nuestro plan premium de fisicoculturismo está diseñado para atletas avanzados que buscan
+                                                maximizar su rendimiento y desarrollo muscular. Incluye una rutina de entrenamiento intensiva,
+                                                asesoramiento nutricional avanzado y seguimiento personalizado de progreso.
+                                            </p>
+                                            <h3>Venta del Plan</h3>
+                                            <ul>
+                                                <li>Precio: $80.000</li>
+                                                <li>Duración: 8 semanas</li>
+                                                <li>Incluye:
+                                                    <ul>
+                                                        <li>Rutina de entrenamiento intensiva</li>
+                                                        <li>Asesoramiento nutricional avanzado</li>
+                                                        <li>Seguimiento personalizado de progreso</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">carrito</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Atrás</button>
+                                    <button type="button" class="btn btn-primary">Comprar</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Launch demo modal
+                    
+
+                    <button type="button" class="btn btn-primary mt-4" data-bs-toggle="modal" data-bs-target="#modal3">
+                        <h3>Plan Grupal</h3>
                     </button>
                     
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
+                    <!-- Modal 3-->
+                    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Plan Grupal</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Plan Grupal de Rugby</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                ...
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="entrenando_3.jpg" alt="Imagen del plan grupal de rugby" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h2>Plan Grupal de Rugby</h2>
+                                            <p>
+                                                Nuestro plan grupal de rugby está diseñado para equipos que desean mejorar su rendimiento
+                                                y técnica en el campo de juego. Incluye entrenamientos personalizados para el equipo,
+                                                asesoramiento táctico y estratégico, y seguimiento de progreso durante la temporada.
+                                            </p>
+                                            <h3>Venta del Plan</h3>
+                                            <ul>
+                                                <li>Precio por equipo: $500.000</li>
+                                                <li>Duración: Temporada completa</li>
+                                                <li>Incluye:
+                                                    <ul>
+                                                        <li>Entrenamientos personalizados para el equipo</li>
+                                                        <li>Asesoramiento táctico y estratégico</li>
+                                                        <li>Seguimiento de progreso durante la temporada</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">carrito</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Atrás</button>
+                                    <button type="button" class="btn btn-primary">Comprar</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </section>

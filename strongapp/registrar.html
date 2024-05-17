@@ -21,7 +21,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="Menu.html"><img src="rugby1.webp" width="220px"></a>
+                <a class="navbar-brand" href="Menu.html"><img src="logo.jfif" width="120px" height="120"></a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
                     type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                     aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,6 +38,8 @@
                                 href="contacto.html">Contacto</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
                                 href="Menu.html">Menu</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                                href="iniciarsesion.html">Iniciar sesion</a></li>
                     </ul>
                 </div>
             </div>
@@ -46,58 +48,57 @@
     <main>
         <section class="page-section" id="contact">
             <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contactanos</h2>
                 <!-- Icon Divider-->
-                <div class="divider-custom">
+
+                <div class="divider-custom mt-5">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
+                <h1 class="text-center mb-5">Registrate!</h1>
                 <!-- Contact Section Form-->
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
 
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <form id="formulario" >
                             <!-- Nombre-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="nombre" name="nombre" type="text" placeholder="Ingresa tu nombre..." />
-                                <label for="nombre">Nombre</label>                           
+                                <input class="form-control" id="nombre" name="nombre" type="text"
+                                    placeholder="Ingresa tu nombre..." />
+                                <label for="nombre">Nombre</label>
                             </div>
                             <!-- Apellido -->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="apellido" name="apellido" type="text" placeholder="Ingresa tu Apellido..." />
+                                <input class="form-control" id="apellido" name="apellido" type="text"
+                                    placeholder="Ingresa tu Apellido..." />
                                 <label for="apellido">Apellido</label>
                             </div>
                             <!-- Email -->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="nombre@ejemplo.com"/>
+                                <input class="form-control" id="email" type="email" placeholder="nombre@ejemplo.com" />
                                 <label for="email">Email</label>
                             </div>
                             <!-- Contraseña-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="pass" name="pass" type="password" placeholder="Ingrese contraseña."/>
+                                <input class="form-control" id="pass" name="pass" type="password"
+                                    placeholder="Ingrese contraseña." />
                                 <label for="pass">Contraseña</label>
                             </div>
                             <!-- Repetir Contraseña-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="passw" name="passw" type="password" placeholder="Repetir contraseña"/>
+                                <input class="form-control" id="passw" name="passw" type="password"
+                                    placeholder="Repetir contraseña" />
                                 <label for="passw">Repita su contraseña</label>
                             </div>
-                            <!-- Submit Button-->
                             <p>
-                                <button class="btn btn-primary" type="button" id="btnRegistar" data-bs-toggle="collapse"
+                                <button class="btn btn-primary" type="button" id="Registrar" data-bs-toggle="collapse"
                                     data-bs-target="#collapseWidthExample" aria-expanded="false"
                                     aria-controls="collapseWidthExample">
                                     Registrarse
                                 </button>
                             </p>
-                            <div style="min-height: 120px;">
-                                <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                                    <div class="card card-body" style="width: 300px;">
-                                        su mensaje a sido enviado
-                                    </div>
-                                </div>
+                            <div id="validar">
+
                             </div>
                         </form>
                     </div>
@@ -112,7 +113,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/validaciones.js"></script>
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     
+
 </body>
+
 </html>
