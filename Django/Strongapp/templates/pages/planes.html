@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strongapp</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    
+    
+</head>
+<body>
+    {% include "base/header.html" %}
+    <main>
+        <section class="page-section mt-5 mb-5" >
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Nuestros planes!</h2>
+            <div class="container mt-4">
+                
+                <div class="row justify-content-center">
+
+                    {% if planes%}
+                    {% for p in planes %}
+                    
+                    <button type="button" class="btn btn-primary mt-4" data-bs-toggle="modal" data-bs-target="#{{p.id_plan}}">
+                        <h3>{{p.titulo}}</h3>
+                    </button>
+
+                    <!-- Modal 1-->
+                    <div class="modal fade" id="{{p.id_plan}}" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">{{p.titulo}}
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="{% static 'img/' %}{{p.imagen}}" alt="Imagen del plan básico" class="img-fluid">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h2>{{p.titulo}}</h2>
+                                            <p>
+                                                {{p.descripcion}}
+                                            </p>
+                                            <h3>Venta del Plan</h3>
+                                            <ul>
+                                                <li>Precio: ${{p.precio}}</li>
+                                                <li>Duración: {{p.duracion}}</li>
+                                                <li>Incluye:
+                                                    <ul>
+                                                        <li>{{p.incluye}}</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Atrás</button>
+                                    <a href="{% url 'carrito' pk=p.id_plan %}" >
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Comprar</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 1era compra -->
+                    {% comment %} <div class="offcanvas offcanvas-end" tabindex="-1" id="o" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h4 class="offcanvas-title" id="offcanvasRightLabel">
+                                Resumen Compra
+                            </h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="mt-auto">
+                                <h5>Tu Compra:</h5>
+                                <p>
+                                <h5>{{p.descripcion2}}</h5>
+                                </p>
+                                <p>
+                                <h5>¡No pierdas la oportunidad de empezar a transformar tu vida hoy mismo!</h5>
+                                </p>
+                                <br>
+                                <hr>
+                                <h5>TOTAL: $30.000</h5>
+                                <hr>
+                            </div>
+                            <a href="{% url "carrito" %}"><button type="button" class="btn btn-primary w-100 mb-2 mt-3">
+                                    Realizar compra
+                                </button>
+                            </a>
+                            </a>
+                            <a href="#"><button type="button" class="btn btn-danger w-100 mb-2 " data-bs-dismiss="offcanvas">
+                                    Cancelar
+                                </button>
+                            </a>
+                        </div>
+                    </div> {% endcomment %}
+                    {%endfor%}
+                    {%endif%}
+
+                </div>
+            </div>
+        </section>
+
+        
+
+    </main>
+    {% include "base/footer.html" %}
+    <script src="{% static "js/bootstrap.bundle.min.js" %}"></script>
+</body>
+</html>
