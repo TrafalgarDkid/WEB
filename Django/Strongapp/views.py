@@ -77,7 +77,7 @@ def formPlanes(request):
         precio = request.POST.get('precio')
         duracion = request.POST.get('duracion')
         incluye = request.POST.get('incluye')
-        imagen = request.POST.get('incluye')
+        imagen = request.POST.get('imagen')
         
 
         obj = Plan.objects.create(
